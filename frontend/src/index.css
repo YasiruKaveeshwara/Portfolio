@@ -8,7 +8,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(42, 42, 42);
   color: #e0e0e0;
+  box-sizing: border-box;
 }
+
+/* Enable smooth scrolling globally */
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 code {
   font-family: 'Fira Code', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
