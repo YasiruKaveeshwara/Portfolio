@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   color: #e0e0e0;
-  background-color: #2a2a2a;
+  background-color: #1a1a1a;
 }
 
 section {
@@ -21,6 +21,7 @@ section {
   max-width: 300px;
   display: block;
   border-radius: 50%;
+  border: 3px solid #00bcd4;
 }
 
 .about-description {
@@ -33,7 +34,7 @@ h2::after {
   display: block;
   width: 150px; /* Set the width of the horizontal line */
   height: 1px; /* Line thickness */
-  background-color: #00bcd4; /* Line color */
+  background-color: #fff; /* Line color */
   margin-left: 1rem;
   opacity: 0;
   transform: translateX(100%); /* Start from the right side */
@@ -76,7 +77,7 @@ h2::after {
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #00bcd4;
   position: relative;
   display: flex;
   align-items: center;
@@ -90,7 +91,7 @@ h2 {
 /* Style for # tag */
 h2::before {
   content: "#";
-  color: #00bcd4;
+  color: #fff;
   margin-right: 1rem;
   animation: none; /* Remove typing animation from # symbol */
 }
@@ -119,51 +120,46 @@ ul {
 li {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  transition: all 0.2s ease-in-out;
 }
 
-/* Mobile responsiveness */
+li:hover {
+  transform: scale(1.05);
+  color: #00bcd4;
+}
+
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column; /* Stack the image and description vertically */
-    align-items: center; /* Center align the content */
-    gap: 1.5rem; /* Space between image and text */
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   .pic {
-    max-width: 250px; /* Slightly reduce image size */
+    max-width: 250px;
   }
 
   h2 {
-    font-size: 1.5rem; /* Adjust header font size for smaller screens */
+    font-size: 1.5rem;
   }
 
-  p {
-    font-size: 1rem; /* Adjust paragraph font size */
-  }
-
-  ul {
-    padding-left: 1rem; /* Adjust padding for smaller screens */
-  }
-
+  p,
   li {
-    font-size: 1rem; /* Adjust list item font size */
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .about-page {
-    padding: 1.5rem; /* Reduce padding on very small screens */
+    padding: 1.5rem;
   }
 
   h2 {
-    font-size: 1.3rem; /* Further adjust header size */
+    font-size: 1.3rem;
   }
 
-  p {
-    font-size: 0.95rem; /* Further adjust paragraph font size */
-  }
-
+  p,
   li {
-    font-size: 0.95rem; /* Adjust list item font size */
+    font-size: 0.95rem;
   }
 }

@@ -8,18 +8,44 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 2rem;
-  background-color: #333;
   color: #fff;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgba(26, 26, 26, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
 }
 
-.logo a {
-  text-decoration: none;
-  color: #fff;
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center; /* Align logo image and text vertically */
+  gap: 0.5rem; /* Space between the logo and the name */
+}
+
+.logo-image {
+  height: 30px; /* Adjust height */
+  width: auto; /* Maintain aspect ratio */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.logo-text {
   font-size: 1.5rem;
   font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none; /* Remove underline */
 }
+
+.logo:hover .logo-image {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Remove underline for logo links */
+.logo a {
+  text-decoration: none;
+}
+
 
 .nav ul {
   list-style: none;
@@ -29,7 +55,7 @@
   padding: 0;
 }
 
-/* Header Styles */
+/* Header Navigation Link Styles */
 .nav a {
   text-decoration: none;
   color: #fff;
@@ -53,13 +79,12 @@
 
 /* Add active link styling */
 .nav a.active-link {
-  color: #00bcd4;  /* Active link color */
-  font-weight: bold;  /* Optional: Make the active link bold */
+  color: #00bcd4; /* Active link color */
+  font-weight: bold; /* Optional: Make the active link bold */
 }
 
-/* Change the color of the # tag to white when the link is active */
 .nav a.active-link::before {
-  color: #fff;  /* Change the # tag color to white when active */
+  color: #fff; /* Change the # tag color to white when active */
 }
 
 body {
@@ -84,40 +109,41 @@ body {
   gap: 0.5rem;
 }
 
+/* Icons' Default State */
 .side-menu li {
-  opacity: 0; /* Initially hide icons */
-  transform: translateY(-50px); /* Start position for falling animation */
-  animation: rainfall 1.5s forwards;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-30px); /* Start position */
+  animation: rainfall 0.3s forwards; /* Faster animation */
 }
 
 .side-menu li:nth-child(1) {
-  animation-delay: 0.1s; /* Delay the animation for the first icon */
+  animation-delay: 0.05s;
 }
 .side-menu li:nth-child(2) {
-  animation-delay: 0.2s; /* Delay the animation for the second icon */
+  animation-delay: 0.1s;
 }
 .side-menu li:nth-child(3) {
-  animation-delay: 0.3s; /* Delay the animation for the third icon */
+  animation-delay: 0.15s;
 }
 .side-menu li:nth-child(4) {
-  animation-delay: 0.4s; /* Delay the animation for the fourth icon */
+  animation-delay: 0.2s;
 }
 .side-menu li:nth-child(5) {
-  animation-delay: 0.5s; /* Delay the animation for the fifth icon */
+  animation-delay: 0.25s;
 }
 .side-menu li:nth-child(6) {
-  animation-delay: 0.6s; /* Delay the animation for the sixth icon */
+  animation-delay: 0.3s;
 }
 
-/* Animation for icons falling */
+/* Animation for Showing Icons */
 @keyframes rainfall {
   0% {
     opacity: 0;
-    transform: translateY(-50px); /* Start position (above screen) */
+    transform: translateX(-30px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* Final position (normal position) */
+    transform: translateX(0);
   }
 }
 
@@ -137,46 +163,66 @@ body {
   font-size: 2.5rem; /* Increase size */
 }
 
-/* Popup and Scale animation for side menu icons */
-.side-menu li {
-  opacity: 0;
-  transform: scale(0.5) translateX(-30px); /* Start position - smaller and shifted */
-  animation: volumeAnimation 0.7s forwards;
+/* Reverse Animation for Hiding Icons */
+.side-menu.hide-icons li {
+  opacity: 1; /* Initially visible */
+  transform: translateX(0); /* Start position */
+  animation: reverseRainfall 0.3s forwards; /* Faster reverse animation */
 }
 
-.side-menu li:nth-child(1) {
+.side-menu.hide-icons li:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.side-menu.hide-icons li:nth-child(2) {
   animation-delay: 0.1s;
 }
-.side-menu li:nth-child(2) {
+.side-menu.hide-icons li:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.side-menu.hide-icons li:nth-child(4) {
   animation-delay: 0.2s;
 }
-.side-menu li:nth-child(3) {
+.side-menu.hide-icons li:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.side-menu.hide-icons li:nth-child(6) {
   animation-delay: 0.3s;
 }
-.side-menu li:nth-child(4) {
-  animation-delay: 0.4s;
-}
-.side-menu li:nth-child(5) {
-  animation-delay: 0.5s;
-}
-.side-menu li:nth-child(6) {
-  animation-delay: 0.6s;
-}
 
-@keyframes volumeAnimation {
+/* Keyframes for Hiding Icons */
+@keyframes reverseRainfall {
   0% {
-    opacity: 0;
-    transform: scale(0.5) translateX(-30px);
+    opacity: 1;
+    transform: translateX(0);
   }
   100% {
-    opacity: 1;
-    transform: scale(1) translateX(0);
+    opacity: 0;
+    transform: translateX(-30px);
   }
 }
 
-/* Icons hover effect */
-.side-menu li a:hover {
-  color: #00bcd4;
-  transform: translateX(5px);
-  font-size: 2.5rem; /* Increase size */
+/* Default Animation for Showing Icons */
+.side-menu.show-icons li {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-30px); /* Start position */
+  animation: rainfall 0.3s forwards; /* Faster animation */
+}
+
+.side-menu.show-icons li:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.side-menu.show-icons li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.side-menu.show-icons li:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.side-menu.show-icons li:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.side-menu.show-icons li:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.side-menu.show-icons li:nth-child(6) {
+  animation-delay: 0.3s;
 }
