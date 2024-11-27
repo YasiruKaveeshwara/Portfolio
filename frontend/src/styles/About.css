@@ -1,8 +1,8 @@
 .about-page {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  color: #e0e0e0;
+  /* color: #e0e0e0; */
   background-color: #1a1a1a;
 }
 
@@ -27,7 +27,7 @@ section {
 .about-description {
   flex: 1; /* Makes the description section take the remaining space */
 }
-
+/* _________________________________________ */
 /* Horizontal line effect */
 h2::after {
   content: "";
@@ -40,7 +40,7 @@ h2::after {
   transform: translateX(100%); /* Start from the right side */
   animation: slideInLine 1s ease-out forwards; /* Slide in immediately when the page loads */
 }
-
+/* __________________________________________________ */
 /* Keyframes for sliding in the line */
 @keyframes slideInLine {
   0% {

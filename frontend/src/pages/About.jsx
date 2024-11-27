@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion"; // Adding Framer Motion for animations
-import "./../styles/About.css";
+import "./../styles/about.css";
 import photo from "./../assets/images/photo.jpg";
 
 function About() {
@@ -26,7 +26,7 @@ function About() {
         <h2 className="about">About Me</h2>
         <p>Who Am I,</p>
         <div className="about-content">
-          <img src={photo} className="pic" alt="Profile picture of Yasiru Kaveeshwara" />
+          <img src={photo} className="pic" alt="Profile" />
           <div className="about-description">
             <p>
               Hello! I’m Yasiru Kaveeshwara, a passionate Software Engineering student with a keen

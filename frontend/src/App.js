@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Header from "./components/Header";
-import About from "./pages/About";
-import Footer from "./components/Footer";
-import SmoothScroll from 'smooth-scroll';
+import Home from "./pages/home.jsx";
+import About from "./pages/about.jsx";
+import Footer from "./components/footer.jsx";
+import Header from "./components/header";
+import SmoothScroll from "smooth-scroll";
+import Projects from "./pages/projects.jsx";
 
 function App() {
   useEffect(() => {
@@ -19,12 +20,13 @@ function App() {
   }, []);
   return (
     <BrowserRouter>
-      <Header/>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-        </Routes>
-        <Footer />
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/projects' element={<Projects />} />
+      </Routes>
+      <Footer />
       {/* </Layout> */}
     </BrowserRouter>
   );
