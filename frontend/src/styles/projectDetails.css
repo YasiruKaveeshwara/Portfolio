@@ -1,0 +1,46 @@
+.projectD-title{
+animation: fadeIn 1s ease-out forwards;
+}
+.projectD-title::before {
+  content: "#";
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.projectD-title::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 1px; 
+  background-color: #ffffff;
+  margin-left: 2rem;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInLine 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLine {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+

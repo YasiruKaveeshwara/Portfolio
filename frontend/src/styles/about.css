@@ -1,0 +1,80 @@
+h2::after {
+  content: "";
+  display: block;
+  width: 150px; /* Set the width of the horizontal line */
+  height: 1px; /* Line thickness */
+  background-color: #fff; /* Line color */
+  margin-left: 2rem;
+  opacity: 0;
+  transform: translateX(100%); /* Start from the right side */
+  animation: slideInLine 1s ease-out forwards; /* Slide in immediately when the page loads */
+}
+@keyframes slideInLine {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+h2::before {
+  content: "#";
+  color: #fff;
+  margin-right: 1rem;
+  animation: none; /* Remove typing animation from # symbol */
+}
+
+li {
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.05);
+  color: #00bcd4;
+}
+
+.skill:hover {
+  scale: 1.05;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .pic {
+    max-width: 250px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+  }
+}
