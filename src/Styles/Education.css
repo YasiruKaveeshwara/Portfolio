@@ -1,0 +1,132 @@
+/* General Page Styling */
+.section-content-container {
+  margin: 5rem 0;
+  color: white;
+  border-radius: 12px;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+/* Timeline Date */
+.timeline-date {
+  background-color: var(--color-50) !important;
+  color: white !important;
+  font-weight: bold !important; 
+  padding: 10px 15px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  border-radius: 5px;
+  font-size: 1.2rem !important;
+  z-index: 3;
+  text-align: center;
+}
+
+/* Timeline Elements */
+.vertical-timeline-element--education .vertical-timeline-element-content {
+  background: #001a33ae !important;
+  color: var(--color-100);
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-50);
+  box-shadow: 0 4px 10px rgba(177, 177, 177, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  z-index: 3;
+}
+
+/* Hover Effect */
+.vertical-timeline-element--education:hover .vertical-timeline-element-content {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Title & Subtitle */
+.vertical-timeline-element-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: var(--color-60);
+}
+
+/* Grade Styling */
+.education-grade {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ddd;
+}
+
+/* Description */
+.education-description {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.education-description li {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.education-description li::before {
+  content: "✔";
+  color: #4ade80;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Timeline Arrow */
+.vertical-timeline-element-content-arrow {
+  border-right: 0.7rem solid var(--color-50) !important;
+}
+
+/* Icon in Timeline */
+.timeline-icon {
+  background-color: #4ade80 !important;
+  border: 5px solid white;
+  color: white !important;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .timeline-date {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
+  .vertical-timeline-element--education .vertical-timeline-element-content {
+    padding: 15px;
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 1.3rem;
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .education-description li {
+    font-size: 0.9rem;
+  }
+}

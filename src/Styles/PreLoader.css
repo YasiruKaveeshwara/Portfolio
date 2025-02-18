@@ -1,0 +1,96 @@
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+/* Loader Container */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Circular Loader */
+.loader-circle {
+  width: 60px;
+  height: 60px;
+  border: 5px solid var(--color-50);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Loading Text */
+.loader-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-100);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: text-blink 1.5s infinite;
+}
+
+/* Keep Footer at Bottom */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures content pushes footer down */
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Rotating Animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Text Blink Animation */
+@keyframes text-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .loader-circle {
+    width: 50px;
+    height: 50px;
+    border-width: 4px;
+  }
+
+  .loader-text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,18 @@
+/* Ensure footer stays at the bottom */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Wrapper to handle preloader & page content */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Ensures content pushes footer down */
+.main-content {
+  flex: 1;
+}

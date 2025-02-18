@@ -1,0 +1,94 @@
+.project-details-container {
+  padding: 5rem 2rem;
+  min-height: 100vh;
+  color: var(--color-100); /* ✅ Uses defined color variable */
+  z-index: 3;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 2rem;
+  z-index: 3;
+}
+
+.project-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--color-50); /* ✅ Replaced green with predefined color */
+  z-index: 3;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 1rem 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.project-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-badge {
+  background: var(--color-50); /* ✅ Replaced green */
+  color: var(--color-100);
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.project-button {
+  background: var(--color-50); /* ✅ Replaced green */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-button:hover {
+  background: var(--color-60); /* ✅ Uses another defined color */
+  transform: scale(1.1);
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 2.2rem;
+  }
+
+  .project-description {
+    font-size: 1.1rem;
+  }
+
+  .project-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "education": [
+    {
+      "degree": "Bachelor of Science in Software Engineering",
+      "institution": "Sri Lanka Institute of Information Technology (SLIIT)",
+      "year": "2022 - Present",
+      "grade": "Expected Graduation: 2025",
+      "description": [
+        "Studying core computer science concepts including data structures, algorithms, and databases.",
+        "Developed various MERN stack applications and Flutter-based mobile apps.",
+        "Engaged in industry-level software engineering projects and hackathons."
+      ]
+    },
+    {
+      "degree": "G.C.E Advanced Level - Physical Science Stream",
+      "institution": "Royal College, Colombo",
+      "year": "2019 - 2021",
+      "grade": "A for Mathematics, A for Physics, B for Chemistry",
+      "description": [
+        "Excelled in Mathematics, Physics, and Chemistry with a strong academic performance.",
+        "Participated in competitive programming contests and science exhibitions.",
+        "Completed various leadership roles in student organizations."
+      ]
+    },
+    {
+      "degree": "G.C.E Ordinary Level",
+      "institution": "Royal College, Colombo",
+      "year": "2018",
+      "grade": "9A’s",
+      "description": [
+        "Achieved a full set of distinctions in all subjects.",
+        "Actively involved in extracurricular activities such as debating and coding competitions.",
+        "Laid the foundation for analytical thinking and software development."
+      ]
+    }
+  ]
+}

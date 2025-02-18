@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+html {
+  --color-0: #000000;
+  --color-10: #001a33;
+  --color-20: #003366;
+  --color-30: #004d99;
+  --color-40: #0066cc;
+  --color-50: #0066ff;
+  --color-60: #3385ff;
+  --color-70: #66a3ff;
+  --color-80: #99c2ff;
+  --color-90: #cce0ff;
+  --color-100: #ffffff;
+}
+
+body {
+  background-image: linear-gradient(to left, rgb(1, 1, 7), rgb(1, 3, 31)) !important;
+  margin: 0;
+  font-family: "Raleway", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.blue {
+  color: var(--imp-bold-text-color) !important;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-10);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-30);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-50);
+  border-radius: 12px;
+}

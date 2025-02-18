@@ -1,0 +1,28 @@
+{
+  "miniProjects": [
+    {
+      "title": "To-Do App",
+      "bodyText": "A simple task management app using React and local storage.",
+      "image": "/images/todo-app.png",
+      "links": [
+        {
+          "text": "View on GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/todo-app"
+        }
+      ],
+      "tags": ["React", "JavaScript", "LocalStorage"]
+    },
+    {
+      "title": "Weather App",
+      "bodyText": "A weather forecast application using OpenWeatherMap API.",
+      "image": "/images/weather-app.png",
+      "links": [
+        {
+          "text": "View on GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/weather-app"
+        }
+      ],
+      "tags": ["React", "API", "Weather"]
+    }
+  ]
+}
