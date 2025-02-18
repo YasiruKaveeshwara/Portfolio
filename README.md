@@ -30,8 +30,8 @@ A fully dynamic and customizable developer portfolio built with React, showcasin
       <p>Responsive design that works beautifully across all device sizes</p>
     </td>
     <td>
-      <h4>🌓 Dark Mode</h4>
-      <p>Toggle between light and dark themes for better readability</p>
+      <h4>✨ Animations</h4>
+      <p>Smooth transitions using Framer Motion for an interactive experience</p>
     </td>
   </tr>
   <tr>
@@ -42,16 +42,6 @@ A fully dynamic and customizable developer portfolio built with React, showcasin
     <td>
       <h4>🔄 Dynamic Content</h4>
       <p>Easily update projects, skills, and experiences via JSON files</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h4>✨ Animations</h4>
-      <p>Smooth transitions using Framer Motion for an interactive experience</p>
-    </td>
-    <td>
-      <h4>🔍 SEO Friendly</h4>
-      <p>Meta tags and Open Graph integration for improved visibility</p>
     </td>
   </tr>
 </table>
@@ -68,8 +58,6 @@ A fully dynamic and customizable developer portfolio built with React, showcasin
 
 ## 🛠️ Tech Stack
 
-<details>
-<summary>Click to expand Tech Stack details</summary>
 
 - **Frontend Framework**: React.js, React Router
 - **Styling**: TailwindCSS, Bootstrap 5
@@ -181,16 +169,16 @@ Contributions are welcome! Here's how you can help:
 
 <div align="center">
   
-  [![Email](https://img.shields.io/badge/Email-vilansiriwardana@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vilansiriwardana@gmail.com)
+  [![Email](https://img.shields.io/badge/Email-vilansiriwardana@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kaveeshwaray@gmail.com)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-kaveeshwaray-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kaveeshwaray)
   [![GitHub](https://img.shields.io/badge/GitHub-YasiruKaveeshwara-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YasiruKaveeshwara)
-  [![Portfolio](https://img.shields.io/badge/Portfolio-YasiruKaveeshwara.me-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://YasiruKaveeshwara.me)
+  
   
 </div>
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE] file for details.
 
 <div align="center">
   <img src="https://img.shields.io/github/stars/YasiruKaveeshwara/my-portfolio?style=social" alt="Stars" />
