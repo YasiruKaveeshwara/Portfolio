@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import { Fade } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 import "react-vertical-timeline-component/style.min.css";
 import { Container } from "react-bootstrap";
 import ReactMarkdown from "react-markdown";
@@ -24,9 +24,9 @@ function Education() {
       {data ? (
         <div className='section-content-container'>
           <Container>
-            <Fade>
+            <Zoom>
               <h2 className='section-title'>🎓 My Education</h2>
-            </Fade>
+            </Zoom>
             <VerticalTimeline>
               {data.map((item, index) => (
                 <motion.div

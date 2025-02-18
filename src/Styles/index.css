@@ -23,7 +23,11 @@ body {
 }
 
 .blue {
-  color: var(--imp-bold-text-color) !important;
+  color: var(--color-50) !important;
+}
+
+.highlight {
+  color: var(--color-60) !important;
 }
 
 /* --------- */

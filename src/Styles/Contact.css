@@ -1,143 +1,116 @@
-/* ---------- */
-/* Contact Form */
-/* ---------- */
+
 .contact-container {
-    padding: 4rem 2rem;
-  }
-  
-  .contact-left {
-    text-align: left;
-    padding: 2rem;
-    color: white;
-  }
-  
-  .contact-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  .contact-subtitle {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    color: #d1d1d1;
-  }
-  
-  .highlight {
-    color: var(--color-50);
-  }
-  
-  /* ---------- */
-  /* Form Styles */
-  /* ---------- */
-  .contact-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .contact-right form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .input-group {
-    position: relative;
-    width: 100%;
-  }
-  
-  .input-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.3rem;
-    color: var(--color-50);
-  }
-  
-  .user-input {
-    width: 100%;
-    padding: 12px 15px 12px 45px; /* Ensure enough padding for icon */
-    outline: none;
-    border: 2px solid var(--color-50);
-    border-radius: 8px;
-    font-size: 1rem;
-    color: white;
-    background-color: var(--color-10);
-    transition: 0.3s ease-in-out;
-  }
-  
-  .user-input:focus {
-    border-color: var(--color-60);
-    box-shadow: 0 0 10px var(--color-60);
-  }
-  
-  /* Adjust for Textarea */
-  textarea.user-input {
-    height: 100px;
-    resize: none;
-    padding-top: 14px; /* Adjust padding for text alignment */
-  }
-  
-  /* ---------- */
-  /* Button Styles */
-  /* ---------- */
-  .submit-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-50);
-    color: white;
-    font-size: 1.1rem;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    font-weight: bold;
-  }
-  
-  .submit-button:hover {
-    background: var(--color-60);
-  }
-  
-  .send-icon {
-    margin-right: 8px;
-  }
-  
-  /* ---------- */
-  /* Success & Error Messages */
-  /* ---------- */
-  .error-text {
-    font-size: 1rem;
-    color: red;
-    font-weight: bold;
-  }
-  
-  .success-text {
-    font-size: 1rem;
-    color: green;
-    font-weight: bold;
-  }
-  
-  /* ---------- */
-  /* Responsive */
-  /* ---------- */
-  @media (max-width: 768px) {
-    .contact-container {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-  
-    .contact-left {
-      text-align: center;
-    }
-  
-    .contact-right form {
-      width: 100%;
-    }
-  }
-  
+  position: relative;
+  padding: 6rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+  color: white;
+}
+
+/* Ensure the right section is on top */
+.contact-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  z-index: 10; /* Ensure input fields and button are clickable */
+}
+
+/* ---------- */
+/* Input Fields */
+/* ---------- */
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  color: var(--color-50);
+  z-index: 10; /* Ensure icon is above the input field */
+}
+
+.user-input {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  outline: none;
+  border: 2px solid var(--color-50);
+  border-radius: 8px !important;
+  border-radius: 10px 0 0 10px;
+  font-size: 1rem;
+  color: white;
+  background: #001a33ae !important;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  z-index: 10; /* Make inputs clickable */
+}
+
+.user-input:focus {
+  border-color: var(--color-60);
+  box-shadow: 0 0 10px var(--color-60);
+}
+
+/* Adjust for Textarea */
+textarea.user-input {
+  height: 100px;
+  resize: none;
+  padding-top: 14px;
+}
+
+/* ---------- */
+/* Button Styles */
+/* ---------- */
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-50);
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  position: relative;
+  z-index: 10; /* Ensure button is clickable */
+}
+
+
+.send-icon {
+  margin-right: 8px;
+}
+
+
+/* ---------- */
+/* Success & Error Messages */
+/* ---------- */
+.error-text {
+  font-size: 1rem;
+  color: red;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+
+.success-text {
+  font-size: 1rem;
+  color: green;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
