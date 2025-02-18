@@ -1,0 +1,38 @@
+{
+  "otherSkills": [
+    {
+      "category": "Soft Skills",
+      "skills": [
+        { "name": "Leadership & Decision Making", "icon": "fa fa-users-cog" },
+        { "name": "Collaboration & Teamwork", "icon": "fa fa-handshake" },
+        { "name": "Time Management & Prioritization", "icon": "fa fa-clock" },
+        { "name": "Adaptability & Growth Mindset", "icon": "fa fa-sync-alt" },
+        { "name": "Creativity & Innovation", "icon": "fa fa-lightbulb" },
+        { "name": "Critical Thinking & Strategy", "icon": "fa fa-brain" },
+        { "name": "Problem Solving & Troubleshooting", "icon": "fa fa-puzzle-piece" },
+        { "name": "Effective Communication", "icon": "fa fa-comments" },
+        { "name": "Emotional Intelligence (EQ)", "icon": "fa fa-heart" }
+      ]
+    },
+    {
+      "category": "Technical & Development Skills",
+      "skills": [
+        { "name": "API Development & Integration", "icon": "fa fa-plug" },
+        { "name": "Full-Stack Web Development (MERN Stack)", "icon": "fa fa-laptop-code" },
+        { "name": "Mobile App Development", "icon": "fa fa-mobile-alt" },
+        { "name": "Frontend Frameworks", "icon": "fa fa-window-maximize" },
+        { "name": "Backend Frameworks", "icon": "fa fa-server" },
+        { "name": "Database Design & Management", "icon": "fa fa-database" },
+        { "name": "Object-Oriented Programming (OOP)", "icon": "fa fa-cogs" },
+        { "name": "Data Structures & Algorithms", "icon": "fa fa-sitemap" },
+        { "name": "RESTful APIs", "icon": "fa fa-code" },
+        { "name": "UI/UX Design & Prototyping", "icon": "fa fa-paint-brush" },
+        { "name": "Responsive Web Design & Accessibility", "icon": "fa fa-desktop" },
+        { "name": "Project Management & Agile Methodologies", "icon": "fa fa-project-diagram" },
+        { "name": "Technical Documentation & Reports", "icon": "fa fa-file-alt" },
+        { "name": "Version Control & GitOps", "icon": "fa fa-code-branch" },
+        { "name": "Continuous Integration & Deployment (CI/CD)", "icon": "fa fa-sync" }
+      ]
+    }
+  ]
+}

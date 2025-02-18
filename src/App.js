@@ -18,6 +18,7 @@ import ParticlesBackground from "./components/ParticlesBackground";
 
 import "./Styles/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
