@@ -1,154 +1,147 @@
 {
-    "projects" : [
+  "projects": [
+    {
+      "images": [
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740574249/Screenshot_2024-11-23_184818_nzj2qd.png"
+      ],
+      "title": "Shopping Eye",
+      "bodyText": "- A shopping mall navigation assistant designed to enhance the user shopping experience.\n - Features shop location finder with 3D visualization using Three.js.\n - Integrated AI-powered chatbot for real-time navigation assistance and smart location guidance.\n - Built using the **MERN stack**, with integrated APIs for live updates and information.",
+      "links": [
         {
-            "image" : "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
-            "title": "Dev Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://mayankagarwal.me"
-                }
-            ],
-            "tags" : [
-                "React",
-                "Portfolio",
-                "JavaScript"
-            ]
-        },
-        {
-            "image" : "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
-            "title": "Caaring -  Cab Share App",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a nn existing cab.\n - Added User authentication and password reset using **SendGrid**.\n .",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
-                },
-                {
-                    "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
-            ]
-        },
-        {
-            "image" : "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
-            "title": "Quiet Hours App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Alarm Manager",
-                "VIT"
-            ]
-        },
-        {
-            "image" : "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
-            "title": "Secure Chat App",
-            "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/SecureChatApp"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Firebase",
-                "RSA"
-            ]
-        },
-        {
-            "image" : "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
-            "title": "MVVM Sample App",
-            "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Room",
-                "Coroutines",
-                "Flow",
-                "Hilt-Dagger"
-            ]
-        },
-        {
-            "image" : "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
-            "title": "Feed List App",
-            "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Paging 3",
-                "Coroutines",
-                "Flow"
-            ]
-        },
-        {
-            "image" : "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
-            "title": "Task Tracker",
-            "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/task-tracker-app"
-                }
-            ],
-            "tags" : [
-                "TypeScript",
-                "Angular 12",
-                "JavaScript"
-            ]
-        },
-        {
-            "image" : "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
-            "title": "Image Encryption/Decryption",
-            "bodyText": "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Django",
-                "SDES",
-                "Cryptography"
-            ]
+          "text": "GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/Shopping-Eye-Extended_Shopping-Mall-Application"
         }
-    ]
+      ],
+      "tags": ["React", "NodeJs", "MongoDB", "Express", "Three Js", "Tailwind", "Chat Bot"]
+    },
+
+    {
+      "title": "Personal Portfolio",
+      "images": ["https://res.cloudinary.com/dh3qafnzi/image/upload/v1740584122/Screenshot_2025-02-26_210407_bhpxh5.png"],
+      "bodyText": "- A fully responsive and modern personal portfolio showcasing my projects, skills, and experience.\n - Developed using React.js and Framer Motion for smooth animations.\n - Integrated with EmailJS for direct contact and a dynamic projects section powered by JSON.\n - Includes a GitHub repository display, and real-time theme switching.\n - Hosted on Netlify with CI/CD integration for automatic deployments.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/Portfolio"
+        }
+      ],
+      "tags": ["React.js", "Framer Motion", "EmailJS", "Netlify"]
+    },
+
+    {
+      "images": [
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740570064/Loading_egqaev.png",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740570575/Donate_path_hvomgc.png",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740570554/Donate_path2_cklcxr.png",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740570561/Donate_path1_voufc0.png"
+      ],
+      "title": "DonatePath",
+      "bodyText": "- A donation mobile application connecting volunteers and donors with organizations and individuals in need.\n - Features include public use profile, feedback and rating system, event creation, donations, volunteering.\n - Built using Flutter with Firebase Authentication and Firestore.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/Donate-Path_Charity-Donation-Mobile-Application"
+        }
+      ],
+      "tags": ["Android", "Flutter", "Firebase"]
+    },
+
+    {
+      "images": [
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740584434/Screenshot_2024-11-24_154731_oo1sje.png",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740584436/Screenshot_2024-11-24_154810_lzdsph.png",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740584435/Screenshot_2024-11-24_154838_xxdo7k.png"
+      ],
+      "title": "Zero-Waste",
+      "bodyText": "- A waste management system for monitoring waste collection and resource allocation.\n - Features include **QR**-based waste tracking, real-time peak monitoring, collector management .\n - Built using the **MERN** stack with **Design Patterns** implementation for peak monitoring.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/Zero-Waste"
+        }
+      ],
+      "tags": ["React", "NodeJs", "Express", "MongoDB", "Tailwind", "REST API", "QR Scan"]
+    },
+
+    {
+      "images": [
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740585424/Screenshot_2025-02-26_212616_nudcpu.png",
+        "https://res.cloudinary.com/dh3qafnzi/video/upload/v1740585973/Book_Review_Platform_Demo_-_Made_with_Clipchamp_kqconm.mp4"
+      ],
+      "title": "Book Reviewer",
+      "bodyText": "- A book review web application where users can post reviews and ratings.\n - Features include authentication, review filtering, and user-generated content.\n - Built using the MERN stack with RESTful APIs.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/Book-Review-Platform"
+        },
+        {
+          "text": "Demo",
+          "href": "https://res.cloudinary.com/dh3qafnzi/video/upload/v1740585973/Book_Review_Platform_Demo_-_Made_with_Clipchamp_kqconm.mp4"
+        }
+      ],
+      "tags": ["React", "NodeJs", "Express", "MongoDB", "Tailwind", "REST API", "JWT"]
+    },
+
+    {
+      "images": [
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740594004/WhatsApp_Image_2025-02-26_at_23.49.13_3e907469_caful8.jpg",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740594004/WhatsApp_Image_2025-02-26_at_23.49.13_3e907469_caful8.jpg",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740594017/WhatsApp_Image_2025-02-26_at_23.49.14_279b8b71_aoobjj.jpg"
+      ],
+      "title": "My Reminder",
+      "bodyText": "- A simple reminder mobile app that allows users to set reminders for important tasks.\n - Features include reminder creation, deletion, and notification alerts.\n - Built using Kotlin with SQLite database for data storage.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/My_Reminder-Reminder_Mobile_Application"
+        }
+      ],
+      "tags": ["Kotlin", "Android", "SQLite"]
+    },
+
+    {
+      "images": "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/examinexpert.png",
+      "title": "ExamineXpert",
+      "bodyText": "- An online examination management system developed as an Java OOP project.\n - Features include test creation, tacking mcq exams and automated grading, .\n - Built using Java with object-oriented principles.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/ExamineXpert-Examination-Management-System"
+        }
+      ],
+      "tags": ["Java", "OOP", "HTML", "CSS"]
+    },
+
+    {
+      "images": [
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740592967/20250226_232932_tdownz.jpg",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740592969/20250226_232829_mwffln.jpg"
+      ],
+      "title": "Sky Fight Game",
+
+      "bodyText": "- A fast-paced arcade shooter game built with Kotlin.\n- Control a fighter jet and shoot down incoming UFOs in space.\n- Enemy UFOs increase speed as the player's score rises.\n- Simple but addictive gameplay with smooth animations and increasing difficulty.\n- Developed using Android Studio with Jetpack components.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/Sky-Fight-Android-Game"
+        }
+      ],
+      "tags": ["Kotlin", "Android", "Game"]
+    },
+
+    {
+      "images": "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
+      "title": "Task Tracker",
+      "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/mayankagarwal09/task-tracker-app"
+        }
+      ],
+      "tags": ["TypeScript", "Angular 12", "JavaScript"]
+    }
+  ]
 }
