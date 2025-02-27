@@ -1,28 +1,36 @@
 {
   "miniProjects": [
     {
-      "title": "To-Do App",
-      "bodyText": "A simple task management app using React and local storage.",
-      "image": "/images/todo-app.png",
+      "title": "Task Manager",
+      "images": [
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740640299/Screenshot_2025-02-27_123832_nmamjt.png",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740640299/Screenshot_2025-02-27_123844_u5yvlo.png",
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740640299/Screenshot_2025-02-27_123935_toduzk.png"
+      ],
+      "bodyText": "- A task management application built with React, Tailwind CSS, Node.js, and MySQL.\n- Create, edit, and delete tasks with rich text descriptions.\n- Advanced filtering by completion status, creation date, and smart search functionality across all task fields.\n- Clean, responsive design optimized for all devices with a simple user interface.\n- Backend API built with Node.js and Express for comprehensive task CRUD operations.\n- Persistent data storage with MySQL database for reliable task management.",
+
       "links": [
         {
-          "text": "View on GitHub",
+          "text": "GitHub",
           "href": "https://github.com/YasiruKaveeshwara/todo-app"
         }
       ],
-      "tags": ["React", "JavaScript", "LocalStorage"]
+      "tags": ["React", "Node.js", "MySQL", "Tailwind CSS"]
     },
+
     {
-      "title": "Weather App",
-      "bodyText": "A weather forecast application using OpenWeatherMap API.",
-      "image": "/images/weather-app.png",
+      "images": [
+        "https://res.cloudinary.com/dh3qafnzi/image/upload/v1740641676/WhatsApp_Image_2025-02-27_at_13.03.59_15994285_ktwog6.jpg"
+      ],
+      "title": "Sample Flutter App",
+      "bodyText": "- A mobile application built using Flutter with user authentication via API integration.\n- Features secure login functionality with persistent sessions using SQLite and SharedPreferences.\n- Stores user details locally for offline access with SQLite database integration.\n- Implements a responsive design with a light blue theme and modern UI/UX elements.\n- Includes comprehensive error handling with user-friendly messages for better user experience.\n- Follows a structured navigation flow between login, home, and database screens.",
       "links": [
         {
-          "text": "View on GitHub",
-          "href": "https://github.com/YasiruKaveeshwara/weather-app"
+          "text": "GitHub",
+          "href": "https://github.com/YasiruKaveeshwara/Flutter-Simple-Login-Application"
         }
       ],
-      "tags": ["React", "API", "Weather"]
+      "tags": ["Flutter", "Dart", "SQLite", "API", "Mobile"]
     }
   ]
 }

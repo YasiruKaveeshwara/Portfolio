@@ -7,6 +7,9 @@ import ReactMarkdown from "react-markdown";
 import PreLoader from "../components/PreLoader";
 import "../Styles/ProjectDetails.css";
 
+const fallbackImage =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 8'%3E%3Crect width='16' height='9' fill='%23ddd' fill-opacity='0.2'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aaa' font-size='1'%3ENo Image%3C/text%3E%3C/svg%3E"; // ✅ 16/9 styled square as a fallback image with 0.2 transparency and "NO IMAGE" text
+
 function ProjectDetails() {
   const { slug } = useParams();
   const [project, setProject] = useState(null);
@@ -53,7 +56,7 @@ function ProjectDetails() {
   }
 
   // Handle multiple images or fallback to single image
-  const images = project.images || [project.image]; 
+  const images = project.images || [project.image];
 
   // Handle Next Image Slide
   const nextImage = () => {
@@ -66,59 +69,63 @@ function ProjectDetails() {
   };
 
   return (
-    <motion.div className="project-details-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
+    <motion.div className='project-details-container' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
       <Container>
-        <Row className="align-items-center">
-          <Col md={6} className="image-slider-container">
-            <div className="slider-wrapper">
+        <Row className='align-items-center'>
+          <Col md={6} className='image-slider-container'>
+            <div className='slider-wrapper'>
               {images.length > 1 && (
-                <button className="slider-button left" onClick={prevImage}>
+                <button className='slider-button left' onClick={prevImage}>
                   <FaArrowLeft />
                 </button>
               )}
 
-              <AnimatePresence mode="wait">
+              <AnimatePresence mode='wait'>
                 <motion.img
                   key={images[currentImageIndex]}
                   src={images[currentImageIndex]}
                   alt={project.title}
-                  className="project-image"
+                  className='project-image'
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -50 }}
                   transition={{ duration: 0.5 }}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = fallbackImage;
+                  }}
                 />
               </AnimatePresence>
 
               {images.length > 1 && (
-                <button className="slider-button right" onClick={nextImage}>
+                <button className='slider-button right' onClick={nextImage}>
                   <FaArrowRight />
                 </button>
               )}
             </div>
           </Col>
           <Col md={6}>
-            <motion.div className="project-content" initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }}>
-              <h1 className="project-title">{project.title}</h1>
+            <motion.div className='project-content' initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }}>
+              <h1 className='project-title'>{project.title}</h1>
               <ReactMarkdown
                 children={project.bodyText}
                 components={{
-                  p: ({ children }) => <span className="markdown-text">{children}</span>,
-                  ul: ({ children }) => <ul className="markdown-list">{children}</ul>,
+                  p: ({ children }) => <span className='markdown-text'>{children}</span>,
+                  ul: ({ children }) => <ul className='markdown-list'>{children}</ul>,
                 }}
               />
 
-              <div className="project-tags">
+              <div className='project-tags'>
                 {project.tags.map((tag, index) => (
-                  <span key={index} className="project-badge">
+                  <span key={index} className='project-badge'>
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <div className="project-links">
+              <div className='project-links'>
                 {project.links.map((link, index) => (
-                  <Button key={index} className="project-button" href={link.href} target="_blank" rel="noopener noreferrer">
-                    {link.text === "GitHub" ? <FaGithub className="icon" /> : <FaExternalLinkAlt className="icon" />}
+                  <Button key={index} className='project-button' href={link.href} target='_blank' rel='noopener noreferrer'>
+                    {link.text === "GitHub" ? <FaGithub className='icon' /> : <FaExternalLinkAlt className='icon' />}
                     {link.text}
                   </Button>
                 ))}

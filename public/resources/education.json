@@ -1,37 +1,48 @@
 {
   "education": [
     {
-      "degree": "Bachelor of Science in Software Engineering",
+      "degree": "BSc. (Hons) Information Technology specializing in Software Engineering",
       "institution": "Sri Lanka Institute of Information Technology (SLIIT)",
       "year": "2022 - Present",
-      "grade": "Expected Graduation: 2025",
+      "grade": "Expected Graduation: 2026",
       "description": [
-        "Studying core computer science concepts including data structures, algorithms, and databases.",
-        "Developed various MERN stack applications and Flutter-based mobile apps.",
-        "Engaged in industry-level software engineering projects and hackathons."
+        "Studying core computer science concepts including data structures, algorithms, OOP, and databases.",
+        "Developed various full stack applications and  mobile apps.",
+        "Engaged in industry-level software engineering concepts."
       ]
     },
     {
+      "degree": "Diploma in English",
+      "institution": "Britishway English Academy",
+      "year": "2022",
+      "grade": "Merit Pass",
+      "description": ["Studied English language and literature.", "Developed strong communication skills in English."]
+    },
+
+    {
       "degree": "G.C.E Advanced Level - Physical Science Stream",
-      "institution": "Royal College, Colombo",
+      "institution": "President's College, Minuwangoda",
       "year": "2019 - 2021",
-      "grade": "A for Mathematics, A for Physics, B for Chemistry",
+      "grade": "C for ICT, S for Physics, S for Mathematics",
+
       "description": [
-        "Excelled in Mathematics, Physics, and Chemistry with a strong academic performance.",
-        "Participated in competitive programming contests and science exhibitions.",
-        "Completed various leadership roles in student organizations."
+        "Studied advanced mathematics, physics, and information and communication technology.",
+        "Developed a strong foundation in mathematics and physics."
       ]
     },
     {
       "degree": "G.C.E Ordinary Level",
-      "institution": "Royal College, Colombo",
-      "year": "2018",
-      "grade": "9A’s",
-      "description": [
-        "Achieved a full set of distinctions in all subjects.",
-        "Actively involved in extracurricular activities such as debating and coding competitions.",
-        "Laid the foundation for analytical thinking and software development."
-      ]
+      "institution": "President's College, Minuwangoda",
+      "year": "2013 - 2018",
+      "grade": "7A’s and 2B’s",
+      "description": ["Studied 9 subjects including mathematics, science, and English.", "Developed a strong knowledge in all subjects."]
+    },
+    {
+      "institution": "Gothami junior school, Gampaha",
+      "year": "2008 - 2012",
+      "grade": "Passed",
+      "description": ["Studied primary and secondary education."]
+      
     }
   ]
 }

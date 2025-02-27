@@ -129,19 +129,6 @@
         }
       ],
       "tags": ["Kotlin", "Android", "Game"]
-    },
-
-    {
-      "images": "https://res.cloudinary.com/dh3qafnzi/image/upload/v1732703488/Screenshot_2024-11-23_184750_u8u3bv.png",
-      "title": "Task Tracker",
-      "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-      "links": [
-        {
-          "text": "GitHub",
-          "href": "https://github.com/mayankagarwal09/task-tracker-app"
-        }
-      ],
-      "tags": ["TypeScript", "Angular 12", "JavaScript"]
     }
   ]
 }

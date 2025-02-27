@@ -69,8 +69,6 @@
   }
 }
 
-
-
 .project-image:hover {
   transform: scale(1.05);
 }
@@ -142,6 +140,11 @@
     font-size: 2.2rem;
   }
 
+  .project-content {
+    padding-top: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
   .project-description {
     font-size: 1.1rem;
   }
@@ -149,5 +152,12 @@
   .project-button {
     font-size: 0.9rem;
     padding: 8px 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .project-details-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }

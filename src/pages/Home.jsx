@@ -79,8 +79,8 @@ function Home() {
                     <br />I specialize in <b className='blue'> Full-Stack Development </b> and love building new technologies.
                     <br />
                     <br />I am proficient in
-                    <b className='blue'> JavaScript, </b> as well as have knowledge in programming languages such as Python, Java, C++, and
-                    <b className='blue'> Solidity.</b>
+                    <b className='blue'> JavaScript, </b> as well as have knowledge in programming languages such as Python, C, C++, and
+                    <b className='blue'> Java.</b>
                     <br />
                     <br />I work with
                     <b className='blue'> Node.js, MongoDB,</b> and
