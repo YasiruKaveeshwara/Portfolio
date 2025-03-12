@@ -75,15 +75,15 @@ function Home() {
                     Hi, my name is <span className='blue'> Yasiru Kaveeshwara </span>
                     and I'm a software engineer undergraduate from <span className='blue'> Gampaha, Sri Lanka.</span>
                     <br />
-                    <br />I specialize in <b className='blue'> Full-Stack Development </b> and love building new technologies.
+                    <br />I specialize in <b className='blue'> Full-Stack </b>Development and love building new technologies.
                     <br />
                     <br />I am proficient in
                     <b className='blue'> JavaScript, </b> as well as have knowledge in programming languages such as Python, C, C++, and
                     <b className='blue'> Java.</b>
                     <br />
                     <br />I work with
-                    <b className='blue'> Node.js, MongoDB,</b> and
-                    <b className='blue'> modern JavaScript frameworks</b> like
+                    <b className='blue'> Node.js</b>,
+                    <b className='blue'> MongoDB</b> and  modern JavaScript frameworks like
                     <b className='blue'> React.js</b>.
                     <br />
                     <br />I am also interested in
