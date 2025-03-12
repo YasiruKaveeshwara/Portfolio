@@ -55,9 +55,8 @@ function Home() {
                       options={{
                         strings: [
                           "MERN Stack Developer",
-                          "Passionate Blockchain Enthusiast",
-                          "Committed Open Source Contributor",
                           "Effective Problem Solver",
+                          "Passionate AI Enthusiast",
                         ],
                         autoStart: true,
                         loop: true,
