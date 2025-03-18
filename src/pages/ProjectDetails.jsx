@@ -19,9 +19,9 @@ function ProjectDetails() {
     const fetchProjects = async () => {
       try {
         const [projectsResponse, miniProjectsResponse, mobileProjectsResponse] = await Promise.all([
-          fetch("/resources/projects.json"),
-          fetch("/resources/miniProjects.json"),
-          fetch("/resources/Projects.json"),
+          fetch("resources/projects.json"),
+          fetch("resources/miniProjects.json"),
+          fetch("resources/Projects.json"),
         ]);
 
         if (!projectsResponse.ok || !miniProjectsResponse.ok || !mobileProjectsResponse.ok) {
