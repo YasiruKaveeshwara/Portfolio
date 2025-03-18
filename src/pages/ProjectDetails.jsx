@@ -18,35 +18,34 @@ function ProjectDetails() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const [projectsResponse, miniProjectsResponse, mobileProjectsResponse] = await Promise.all([
-          fetch("/resources/projects.json"),
-          fetch("/resources/miniProjects.json"),
-          fetch("/resources/Projects.json"),
+        const baseUrl = window.location.origin; // Dynamically get base URL
+        const [projectsResponse, miniProjectsResponse] = await Promise.all([
+          fetch(`${baseUrl}/resources/projects.json`),
+          fetch(`${baseUrl}/resources/miniProjects.json`)
         ]);
-
-        if (!projectsResponse.ok || !miniProjectsResponse.ok || !mobileProjectsResponse.ok) {
+    
+        if (!projectsResponse.ok || !miniProjectsResponse.ok) {
           throw new Error(`Error fetching data from JSON files`);
         }
-
+    
         const projectsData = await projectsResponse.json();
         const miniProjectsData = await miniProjectsResponse.json();
-        const mobileProjectsData = await mobileProjectsResponse.json();
-
+    
         const foundProject =
           projectsData.projects.find((p) => p.title.toLowerCase().replace(/\s+/g, "-") === slug) ||
-          miniProjectsData.miniProjects.find((p) => p.title.toLowerCase().replace(/\s+/g, "-") === slug) ||
-          mobileProjectsData.mobileProjects.find((p) => p.title.toLowerCase().replace(/\s+/g, "-") === slug);
-
+          miniProjectsData.miniProjects.find((p) => p.title.toLowerCase().replace(/\s+/g, "-") === slug);
+    
         if (!foundProject) {
           console.error("Project not found:", slug);
           return;
         }
-
+    
         setProject(foundProject);
       } catch (error) {
         console.error("Error fetching project details:", error);
       }
     };
+    
 
     fetchProjects();
   }, [slug]);
